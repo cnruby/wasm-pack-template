@@ -17,3 +17,8 @@ extern {
 pub fn greet() {
     alert("Hello, {{project-name}}!");
 }
+
+#[wasm_bindgen]
+pub fn hello() -> String {
+    "Hello, react + {{project-name}}!".to_string()
+}
